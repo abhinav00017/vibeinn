@@ -1,0 +1,21 @@
+{
+  "handle": "vibeinn-001",
+  "title": "Vibeinn 001: Relaxed Fit Shirt [UNISEX]",
+  "description": "Hand printed, one of a kind. Relaxed fit. 100% cotton. Each piece is printed by hand, so no two are the same.",
+  "price": { "amount": 179900, "currency": "INR" },
+  "images": [
+    { "src": "/images/products/001-a.svg", "alt": "Vibeinn 001: Relaxed Fit Shirt [UNISEX], front" },
+    { "src": "/images/products/001-b.svg", "alt": "Vibeinn 001: Relaxed Fit Shirt [UNISEX], back" }
+  ],
+  "type": "shirt",
+  "tags": ["unisex", "hand-printed"],
+  "variants": [
+    { "id": "001-xs", "size": "XS", "stock": 2 },
+    { "id": "001-s", "size": "S", "stock": 3 },
+    { "id": "001-m", "size": "M", "stock": 4 },
+    { "id": "001-l", "size": "L", "stock": 3 },
+    { "id": "001-xl", "size": "XL", "stock": 1 },
+    { "id": "001-2xl", "size": "2XL", "stock": 0 }
+  ],
+  "collections": ["drop-01"]
+}

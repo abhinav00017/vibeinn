@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1500" viewBox="0 0 1200 1500">
+  <rect width="1200" height="1500" fill="#111111"/>
+  <path d="M400 380 L300 450 L240 700 L360 730 L360 1180 L840 1180 L840 730 L960 700 L900 450 L800 380 Q600 500 400 380 Z" fill="#f2efe9" opacity="0.9"/>
+  <text x="600" y="1380" font-family="Helvetica, Arial, sans-serif" font-size="56" text-anchor="middle" fill="#f2efe9" letter-spacing="8">DROP 01</text>
+</svg>
