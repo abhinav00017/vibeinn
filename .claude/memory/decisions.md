@@ -20,4 +20,5 @@ Append only. Newest at the bottom.
 - Back and front have separate artwork sets. A back print sits big between the shoulders; a front print sits small on the left chest.
 - Artworks live in `content/artworks/*.json` with `side`, `code`, `name`, `new`, `image`. A product shows the customiser when `customisable: true`.
 - Cart lines carry `prints[]`. The line id includes the artwork ids, so two different customisations are separate lines. Cart store is at version 2; older saved carts are dropped.
-- Feature list still to build from the reference: gallery carousel with zoom, delivery estimate countdown, size chart modal, accordions (garment details, disclaimer, returns), two-line announcement bar, search. Accounts, order tracking, and chat wait for a backend.
+- Done 18 Oct (later): gallery swipe carousel with lightbox zoom, size chart modal (data in `content/size-charts/<type>.json`), accordions (garment details from `product.details`, disclaimer and returns copy from `config/site.ts`), product-level low stock badge when total stock is 5 or less.
+- Still to build from the reference: delivery estimate countdown, two-line announcement bar, search. Accounts, order tracking, and chat wait for a backend.

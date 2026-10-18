@@ -8,6 +8,7 @@ import type {
   Policy,
   PrintSide,
   Product,
+  SizeChart,
 } from "./types";
 import { isInStock } from "./types";
 
@@ -80,6 +81,9 @@ export const localCommerce: Commerce = {
   async getArtworks(side?: PrintSide) {
     const all = readJsonDir<Artwork>("artworks");
     return side ? all.filter((a) => a.side === side) : all;
+  },
+  async getSizeChart(type) {
+    return readJsonDir<SizeChart>("size-charts").find((c) => c.type === type) ?? null;
   },
   async getPolicy(slug) {
     return readPolicies().find((p) => p.slug === slug) ?? null;

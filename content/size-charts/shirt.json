@@ -1,0 +1,14 @@
+{
+  "type": "shirt",
+  "unit": "inches",
+  "note": "Relaxed fit. Measured flat. For a looser fit, go one size up.",
+  "columns": ["Chest", "Length", "Shoulder", "Sleeve"],
+  "rows": [
+    { "size": "XS", "values": [40, 27, 18, 24] },
+    { "size": "S", "values": [42, 28, 19, 24.5] },
+    { "size": "M", "values": [44, 29, 20, 25] },
+    { "size": "L", "values": [46, 30, 21, 25.5] },
+    { "size": "XL", "values": [48, 31, 22, 26] },
+    { "size": "2XL", "values": [50, 32, 23, 26.5] }
+  ]
+}

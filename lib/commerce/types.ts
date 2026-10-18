@@ -42,6 +42,7 @@ export type Product = {
   variants: Variant[];
   collections: string[]; // collection handles
   customisable?: boolean; // buyer picks artwork per side
+  details?: string[]; // bullet lines for the "Garment details" accordion
 };
 
 export type Collection = {
@@ -57,6 +58,14 @@ export type CollectionFilter = {
   availability?: "in-stock" | "out-of-stock";
 };
 
+export type SizeChart = {
+  type: string;
+  unit: string;
+  note?: string;
+  columns: string[];
+  rows: { size: Size; values: number[] }[];
+};
+
 export type Policy = {
   slug: string;
   title: string;
@@ -70,6 +79,7 @@ export interface Commerce {
   getCollection(handle: string): Promise<Collection | null>;
   getCollectionProducts(handle: string, filter?: CollectionFilter): Promise<Product[]>;
   getArtworks(side?: PrintSide): Promise<Artwork[]>;
+  getSizeChart(type: string): Promise<SizeChart | null>;
   getPolicy(slug: string): Promise<Policy | null>;
   getPolicies(): Promise<Policy[]>;
 }

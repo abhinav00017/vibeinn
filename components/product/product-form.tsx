@@ -7,9 +7,9 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils/cn";
 import { Customiser, type Prints } from "./customiser";
 
-type Props = { product: Product; artworks: Artwork[] };
+type Props = { product: Product; artworks: Artwork[]; sizeChart?: React.ReactNode };
 
-export function ProductForm({ product, artworks }: Props) {
+export function ProductForm({ product, artworks, sizeChart }: Props) {
   const add = useCart((s) => s.add);
   const available = product.variants.filter((v) => v.stock > 0);
   const soldOut = available.length === 0;
@@ -59,7 +59,10 @@ export function ProductForm({ product, artworks }: Props) {
   return (
     <div className="space-y-8">
       <div>
-        <p className="text-xs uppercase tracking-[0.18em]">Size</p>
+        <div className="flex items-center justify-between">
+          <p className="text-xs uppercase tracking-[0.18em]">Size</p>
+          {sizeChart}
+        </div>
         <div className="mt-3 flex flex-wrap gap-2">
           {product.variants.map((v) => {
             const out = v.stock <= 0;

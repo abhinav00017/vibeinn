@@ -5,6 +5,8 @@ import { commerce } from "@/lib/commerce";
 import { formatMoney } from "@/lib/utils/money";
 import { Gallery } from "@/components/product/gallery";
 import { ProductForm } from "@/components/product/product-form";
+import { SizeChart } from "@/components/product/size-chart";
+import { Accordions } from "@/components/product/accordions";
 
 type Params = { handle: string };
 
@@ -41,7 +43,11 @@ function ProductSkeleton() {
 async function ProductContent({ params }: { params: Promise<Params> }) {
   const product = await commerce.getProduct((await params).handle);
   if (!product) notFound();
-  const artworks = product.customisable ? await commerce.getArtworks() : [];
+  const [artworks, sizeChart] = await Promise.all([
+    product.customisable ? commerce.getArtworks() : Promise.resolve([]),
+    commerce.getSizeChart(product.type),
+  ]);
+  const totalStock = product.variants.reduce((n, v) => n + v.stock, 0);
 
   return (
     <div className="mt-6 grid gap-10 lg:grid-cols-2 lg:gap-16">
@@ -55,10 +61,19 @@ async function ProductContent({ params }: { params: Promise<Params> }) {
           )}
         </p>
         <p className="mt-1 text-xs text-muted">Taxes included. Shipping calculated at checkout.</p>
+        {totalStock > 0 && totalStock <= 5 && (
+          <p className="mt-3 inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.12em]">
+            <span className="h-2 w-2 rounded-full bg-amber-600" aria-hidden />
+            Low stock: {totalStock} left
+          </p>
+        )}
         <div className="mt-8">
-          <ProductForm product={product} artworks={artworks} />
+          <ProductForm product={product} artworks={artworks} sizeChart={sizeChart ? <SizeChart chart={sizeChart} /> : null} />
         </div>
         <p className="mt-8 text-sm leading-relaxed text-muted">{product.description}</p>
+        <div className="mt-8">
+          <Accordions product={product} />
+        </div>
       </div>
     </div>
   );

@@ -1,0 +1,14 @@
+{
+  "type": "tee",
+  "unit": "inches",
+  "note": "Boxy fit. Measured flat.",
+  "columns": ["Chest", "Length", "Shoulder"],
+  "rows": [
+    { "size": "XS", "values": [40, 25, 19] },
+    { "size": "S", "values": [42, 26, 20] },
+    { "size": "M", "values": [44, 27, 21] },
+    { "size": "L", "values": [46, 28, 22] },
+    { "size": "XL", "values": [48, 29, 23] },
+    { "size": "2XL", "values": [50, 30, 24] }
+  ]
+}
