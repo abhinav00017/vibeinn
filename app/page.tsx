@@ -25,6 +25,7 @@ export default async function HomePage() {
             className="object-cover opacity-80"
           />
         )}
+        <div className="absolute inset-0 bg-gradient-to-t from-ink/85 via-ink/30 to-transparent" />
         <div className="absolute inset-0 flex flex-col items-start justify-end p-6 text-paper sm:p-12">
           <p className="text-xs uppercase tracking-[0.3em]">{siteConfig.tagline}</p>
           <h1 className="mt-2 text-3xl font-semibold uppercase tracking-[0.2em] sm:text-5xl">

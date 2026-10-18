@@ -69,14 +69,26 @@ async function Results({ handle, searchParams }: { handle: string; searchParams:
   const types = [...new Set(unfiltered.map((p) => p.type))];
   const inStock = unfiltered.filter(isInStock).length;
 
+  const filters = (
+    <Filters
+      basePath={`/collections/${handle}`}
+      filter={filter}
+      types={types}
+      counts={{ inStock, outOfStock: unfiltered.length - inStock }}
+    />
+  );
+  const active = (filter.size?.length ?? 0) + (filter.type?.length ?? 0) + (filter.availability ? 1 : 0);
+
   return (
-    <div className="grid gap-10 lg:grid-cols-[220px_1fr]">
-      <Filters
-        basePath={`/collections/${handle}`}
-        filter={filter}
-        types={types}
-        counts={{ inStock, outOfStock: unfiltered.length - inStock }}
-      />
+    <div className="grid gap-8 lg:grid-cols-[220px_1fr] lg:gap-10">
+      <details className="group border-y border-line lg:hidden">
+        <summary className="flex cursor-pointer list-none items-center justify-between py-3 text-xs uppercase tracking-[0.18em] [&::-webkit-details-marker]:hidden">
+          <span>Filter{active > 0 && ` (${active})`}</span>
+          <span className="transition-transform group-open:rotate-45">+</span>
+        </summary>
+        <div className="pb-6">{filters}</div>
+      </details>
+      <div className="hidden lg:block">{filters}</div>
       <div>
         <p className="mb-6 text-xs uppercase tracking-[0.18em] text-muted">
           {products.length} {products.length === 1 ? "product" : "products"}

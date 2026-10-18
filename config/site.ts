@@ -9,7 +9,7 @@ export const siteConfig = {
     { label: "Drop 01", href: "/collections/drop-01" },
   ],
   socials: {
-    instagram: "https://instagram.com/vibeinn",
+    instagram: "https://www.instagram.com/vibeinnnow/",
   },
   footer: {
     policies: [
