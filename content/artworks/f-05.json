@@ -1,0 +1,8 @@
+{
+  "id": "f-05",
+  "code": "F05",
+  "name": "DAD",
+  "side": "front",
+  "new": false,
+  "image": { "src": "/images/artworks/f-05.svg", "alt": "DAD" }
+}

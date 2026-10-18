@@ -19,6 +19,15 @@ export function LineItem({ line }: { line: CartLine }) {
           {line.title}
         </Link>
         <p className="mt-1 text-xs uppercase tracking-[0.12em] text-muted">Size {line.size}</p>
+        {line.prints.length > 0 && (
+          <ul className="mt-1 space-y-0.5 text-[11px] text-muted">
+            {line.prints.map((p) => (
+              <li key={p.side}>
+                <span className="uppercase tracking-[0.12em]">{p.side}</span>: {p.code} · {p.name}
+              </li>
+            ))}
+          </ul>
+        )}
         <div className="mt-auto flex items-center justify-between">
           <div className="flex items-center border border-line">
             <button

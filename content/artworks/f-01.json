@@ -1,0 +1,8 @@
+{
+  "id": "f-01",
+  "code": "F01",
+  "name": "SOUL",
+  "side": "front",
+  "new": false,
+  "image": { "src": "/images/artworks/f-01.svg", "alt": "SOUL" }
+}

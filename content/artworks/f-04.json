@@ -1,0 +1,8 @@
+{
+  "id": "f-04",
+  "code": "F04",
+  "name": "SAINT",
+  "side": "front",
+  "new": false,
+  "image": { "src": "/images/artworks/f-04.svg", "alt": "SAINT" }
+}

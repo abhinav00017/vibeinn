@@ -1,0 +1,8 @@
+{
+  "id": "b-06",
+  "code": "B06",
+  "name": "OFFLINE",
+  "side": "back",
+  "new": false,
+  "image": { "src": "/images/artworks/b-06.svg", "alt": "OFFLINE" }
+}

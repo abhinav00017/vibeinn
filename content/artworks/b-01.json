@@ -1,0 +1,8 @@
+{
+  "id": "b-01",
+  "code": "B01",
+  "name": "LIFE IS BETTER",
+  "side": "back",
+  "new": true,
+  "image": { "src": "/images/artworks/b-01.svg", "alt": "LIFE IS BETTER" }
+}

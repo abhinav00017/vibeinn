@@ -1,10 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
 import type {
+  Artwork,
   Collection,
   CollectionFilter,
   Commerce,
   Policy,
+  PrintSide,
   Product,
 } from "./types";
 import { isInStock } from "./types";
@@ -74,6 +76,10 @@ export const localCommerce: Commerce = {
     const inCollection =
       handle === "all" ? all : all.filter((p) => p.collections.includes(handle));
     return applyFilter(inCollection, filter);
+  },
+  async getArtworks(side?: PrintSide) {
+    const all = readJsonDir<Artwork>("artworks");
+    return side ? all.filter((a) => a.side === side) : all;
   },
   async getPolicy(slug) {
     return readPolicies().find((p) => p.slug === slug) ?? null;

@@ -1,0 +1,8 @@
+{
+  "id": "f-03",
+  "code": "F03",
+  "name": "BOOKS",
+  "side": "front",
+  "new": false,
+  "image": { "src": "/images/artworks/f-03.svg", "alt": "BOOKS" }
+}

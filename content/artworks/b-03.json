@@ -1,0 +1,8 @@
+{
+  "id": "b-03",
+  "code": "B03",
+  "name": "NAMASTE",
+  "side": "back",
+  "new": false,
+  "image": { "src": "/images/artworks/b-03.svg", "alt": "NAMASTE" }
+}

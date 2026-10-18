@@ -1,21 +1,60 @@
 {
   "handle": "vibeinn-003",
   "title": "Vibeinn 003: Boxy Tee [UNISEX]",
-  "description": "Hand printed, one of a kind. Relaxed fit. 100% cotton. Each piece is printed by hand, so no two are the same.",
-  "price": { "amount": 129900, "currency": "INR" },
+  "description": "Get this piece with your chosen artwork screen-printed on it. Unisex. Relaxed fit. 100% cotton.",
+  "price": {
+    "amount": 129900,
+    "currency": "INR"
+  },
   "images": [
-    { "src": "/images/products/003-a.svg", "alt": "Vibeinn 003: Boxy Tee [UNISEX], front" },
-    { "src": "/images/products/003-b.svg", "alt": "Vibeinn 003: Boxy Tee [UNISEX], back" }
+    {
+      "src": "/images/products/003-a.svg",
+      "alt": "Vibeinn 003: Boxy Tee [UNISEX], front"
+    },
+    {
+      "src": "/images/products/003-b.svg",
+      "alt": "Vibeinn 003: Boxy Tee [UNISEX], back"
+    }
   ],
   "type": "tee",
-  "tags": ["unisex", "hand-printed"],
-  "variants": [
-    { "id": "003-xs", "size": "XS", "stock": 1 },
-    { "id": "003-s", "size": "S", "stock": 1 },
-    { "id": "003-m", "size": "M", "stock": 0 },
-    { "id": "003-l", "size": "L", "stock": 0 },
-    { "id": "003-xl", "size": "XL", "stock": 1 },
-    { "id": "003-2xl", "size": "2XL", "stock": 0 }
+  "tags": [
+    "unisex",
+    "hand-printed"
   ],
-  "collections": ["drop-01"]
+  "variants": [
+    {
+      "id": "003-xs",
+      "size": "XS",
+      "stock": 1
+    },
+    {
+      "id": "003-s",
+      "size": "S",
+      "stock": 1
+    },
+    {
+      "id": "003-m",
+      "size": "M",
+      "stock": 0
+    },
+    {
+      "id": "003-l",
+      "size": "L",
+      "stock": 0
+    },
+    {
+      "id": "003-xl",
+      "size": "XL",
+      "stock": 1
+    },
+    {
+      "id": "003-2xl",
+      "size": "2XL",
+      "stock": 0
+    }
+  ],
+  "collections": [
+    "drop-01"
+  ],
+  "customisable": true
 }

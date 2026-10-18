@@ -11,6 +11,25 @@ export type Variant = {
   stock: number;
 };
 
+export type PrintSide = "back" | "front";
+
+export type Artwork = {
+  id: string;
+  code: string;
+  name: string;
+  side: PrintSide;
+  new: boolean;
+  image: { src: string; alt: string };
+};
+
+export type PrintChoice = {
+  side: PrintSide;
+  artworkId: string;
+  code: string;
+  name: string;
+  image: { src: string; alt: string };
+};
+
 export type Product = {
   handle: string;
   title: string;
@@ -22,6 +41,7 @@ export type Product = {
   tags: string[];
   variants: Variant[];
   collections: string[]; // collection handles
+  customisable?: boolean; // buyer picks artwork per side
 };
 
 export type Collection = {
@@ -49,6 +69,7 @@ export interface Commerce {
   getCollections(): Promise<Collection[]>;
   getCollection(handle: string): Promise<Collection | null>;
   getCollectionProducts(handle: string, filter?: CollectionFilter): Promise<Product[]>;
+  getArtworks(side?: PrintSide): Promise<Artwork[]>;
   getPolicy(slug: string): Promise<Policy | null>;
   getPolicies(): Promise<Policy[]>;
 }

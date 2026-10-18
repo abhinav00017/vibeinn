@@ -1,21 +1,60 @@
 {
   "handle": "vibeinn-004",
   "title": "Vibeinn 004: Relaxed Fit Shirt [UNISEX]",
-  "description": "Hand printed, one of a kind. Relaxed fit. 100% cotton. Each piece is printed by hand, so no two are the same.",
-  "price": { "amount": 179900, "currency": "INR" },
+  "description": "Get this piece with your chosen artwork screen-printed on it. Unisex. Relaxed fit. 100% cotton.",
+  "price": {
+    "amount": 179900,
+    "currency": "INR"
+  },
   "images": [
-    { "src": "/images/products/004-a.svg", "alt": "Vibeinn 004: Relaxed Fit Shirt [UNISEX], front" },
-    { "src": "/images/products/004-b.svg", "alt": "Vibeinn 004: Relaxed Fit Shirt [UNISEX], back" }
+    {
+      "src": "/images/products/004-a.svg",
+      "alt": "Vibeinn 004: Relaxed Fit Shirt [UNISEX], front"
+    },
+    {
+      "src": "/images/products/004-b.svg",
+      "alt": "Vibeinn 004: Relaxed Fit Shirt [UNISEX], back"
+    }
   ],
   "type": "shirt",
-  "tags": ["unisex", "hand-printed"],
-  "variants": [
-    { "id": "004-xs", "size": "XS", "stock": 0 },
-    { "id": "004-s", "size": "S", "stock": 0 },
-    { "id": "004-m", "size": "M", "stock": 0 },
-    { "id": "004-l", "size": "L", "stock": 0 },
-    { "id": "004-xl", "size": "XL", "stock": 0 },
-    { "id": "004-2xl", "size": "2XL", "stock": 0 }
+  "tags": [
+    "unisex",
+    "hand-printed"
   ],
-  "collections": ["drop-01"]
+  "variants": [
+    {
+      "id": "004-xs",
+      "size": "XS",
+      "stock": 0
+    },
+    {
+      "id": "004-s",
+      "size": "S",
+      "stock": 0
+    },
+    {
+      "id": "004-m",
+      "size": "M",
+      "stock": 0
+    },
+    {
+      "id": "004-l",
+      "size": "L",
+      "stock": 0
+    },
+    {
+      "id": "004-xl",
+      "size": "XL",
+      "stock": 0
+    },
+    {
+      "id": "004-2xl",
+      "size": "2XL",
+      "stock": 0
+    }
+  ],
+  "collections": [
+    "drop-01"
+  ],
+  "customisable": true
 }

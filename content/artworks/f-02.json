@@ -1,0 +1,8 @@
+{
+  "id": "f-02",
+  "code": "F02",
+  "name": "MUSE",
+  "side": "front",
+  "new": true,
+  "image": { "src": "/images/artworks/f-02.svg", "alt": "MUSE" }
+}

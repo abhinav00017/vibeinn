@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { commerce } from "@/lib/commerce";
 import { formatMoney } from "@/lib/utils/money";
 import { Gallery } from "@/components/product/gallery";
-import { AddToCart } from "@/components/product/add-to-cart";
+import { ProductForm } from "@/components/product/product-form";
 
 type Params = { handle: string };
 
@@ -41,6 +41,7 @@ function ProductSkeleton() {
 async function ProductContent({ params }: { params: Promise<Params> }) {
   const product = await commerce.getProduct((await params).handle);
   if (!product) notFound();
+  const artworks = product.customisable ? await commerce.getArtworks() : [];
 
   return (
     <div className="mt-6 grid gap-10 lg:grid-cols-2 lg:gap-16">
@@ -55,7 +56,7 @@ async function ProductContent({ params }: { params: Promise<Params> }) {
         </p>
         <p className="mt-1 text-xs text-muted">Taxes included. Shipping calculated at checkout.</p>
         <div className="mt-8">
-          <AddToCart product={product} />
+          <ProductForm product={product} artworks={artworks} />
         </div>
         <p className="mt-8 text-sm leading-relaxed text-muted">{product.description}</p>
       </div>

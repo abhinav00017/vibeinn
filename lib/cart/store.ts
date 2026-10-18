@@ -2,18 +2,24 @@
 
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import type { Money, Size } from "@/lib/commerce/types";
+import type { Money, PrintChoice, Size } from "@/lib/commerce/types";
 
 export type CartLine = {
-  id: string; // `${handle}:${variantId}`
+  id: string; // `${handle}:${variantId}:${print ids}`
   handle: string;
   variantId: string;
   title: string;
   size: Size;
   price: Money;
   image: { src: string; alt: string };
+  prints: PrintChoice[]; // empty for plain products
   quantity: number;
 };
+
+export function lineId(handle: string, variantId: string, prints: PrintChoice[]): string {
+  const p = prints.map((x) => `${x.side}=${x.artworkId}`).sort().join(",");
+  return `${handle}:${variantId}:${p}`;
+}
 
 type CartState = {
   lines: CartLine[];
@@ -32,7 +38,7 @@ export const useCart = create<CartState>()(
       open: false,
       add: (line, quantity = 1) =>
         set((s) => {
-          const id = `${line.handle}:${line.variantId}`;
+          const id = lineId(line.handle, line.variantId, line.prints);
           const existing = s.lines.find((l) => l.id === id);
           const lines = existing
             ? s.lines.map((l) => (l.id === id ? { ...l, quantity: l.quantity + quantity } : l))
@@ -52,7 +58,13 @@ export const useCart = create<CartState>()(
     }),
     {
       name: "vibeinn-cart",
+      version: 2,
       partialize: (s) => ({ lines: s.lines }),
+      migrate: (persisted, version) => {
+        // v1 lines had no `prints`. Drop them rather than guess.
+        if (version < 2) return { lines: [] };
+        return persisted as { lines: CartLine[] };
+      },
     },
   ),
 );
