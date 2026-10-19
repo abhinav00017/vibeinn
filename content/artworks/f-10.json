@@ -1,0 +1,11 @@
+{
+  "id": "f-10",
+  "code": "F10",
+  "name": "PUSH",
+  "side": "front",
+  "new": true,
+  "image": {
+    "src": "/images/artworks/f-10.svg",
+    "alt": "PUSH"
+  }
+}

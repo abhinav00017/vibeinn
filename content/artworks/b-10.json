@@ -1,0 +1,11 @@
+{
+  "id": "b-10",
+  "code": "B10",
+  "name": "FULL SEND",
+  "side": "back",
+  "new": false,
+  "image": {
+    "src": "/images/artworks/b-10.svg",
+    "alt": "FULL SEND"
+  }
+}

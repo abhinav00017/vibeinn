@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { CartButton } from "@/components/cart/cart-button";
+import { Logo } from "@/components/layout/logo";
 
 export function Header() {
   return (
@@ -13,8 +14,8 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <Link href="/" className="text-lg font-semibold uppercase tracking-[0.3em]">
-          {siteConfig.name}
+        <Link href="/" aria-label="Home" className="hover:opacity-70">
+          <Logo className="h-4 sm:h-5" />
         </Link>
         <div className="flex items-center gap-5 text-xs uppercase tracking-[0.18em]">
           <Link href="/account" className="hidden hover:opacity-60 sm:inline">

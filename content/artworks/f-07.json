@@ -1,0 +1,11 @@
+{
+  "id": "f-07",
+  "code": "F07",
+  "name": "P1",
+  "side": "front",
+  "new": true,
+  "image": {
+    "src": "/images/artworks/f-07.svg",
+    "alt": "P1"
+  }
+}

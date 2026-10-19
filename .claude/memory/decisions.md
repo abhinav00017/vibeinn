@@ -22,3 +22,10 @@ Append only. Newest at the bottom.
 - Cart lines carry `prints[]`. The line id includes the artwork ids, so two different customisations are separate lines. Cart store is at version 2; older saved carts are dropped.
 - Done 18 Oct (later): gallery swipe carousel with lightbox zoom, size chart modal (data in `content/size-charts/<type>.json`), accordions (garment details from `product.details`, disclaimer and returns copy from `config/site.ts`), product-level low stock badge when total stock is 5 or less.
 - Still to build from the reference: delivery estimate countdown, two-line announcement bar, search. Accounts, order tracking, and chat wait for a backend.
+
+## 2026-10-19
+
+- Logo: direction B, VIBEINN in Futura Bold with the two Ns joined, as outlined paths. V mark as the symbol. Stacked lockup for square spaces. Files in `public/brand/`, rules in `brand/BRAND.md`. Abhinav wants the brand minimal: ink on paper, one colour, no decoration.
+- Company rules in `docs/COMPANY.md`, product and print rules in `docs/PRODUCT-RULES.md`. Keep policy pages and COMPANY.md promises in sync.
+- Eight motorsport artworks (B07 to B10, F07 to F10) are drafted and live in the catalogue, pending Abhinav's pick. Type inside them is not yet outlined.
+- `tools/textpath.py` turns text into SVG paths with fontTools. Use it to outline artwork text before print.

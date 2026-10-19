@@ -1,0 +1,11 @@
+{
+  "id": "f-08",
+  "code": "F08",
+  "name": "DRS",
+  "side": "front",
+  "new": false,
+  "image": {
+    "src": "/images/artworks/f-08.svg",
+    "alt": "DRS"
+  }
+}

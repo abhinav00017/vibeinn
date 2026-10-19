@@ -1,0 +1,11 @@
+{
+  "id": "b-08",
+  "code": "B08",
+  "name": "NO BRAKES",
+  "side": "back",
+  "new": false,
+  "image": {
+    "src": "/images/artworks/b-08.svg",
+    "alt": "NO BRAKES"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "id": "b-07",
+  "code": "B07",
+  "name": "BOX BOX BOX",
+  "side": "back",
+  "new": true,
+  "image": {
+    "src": "/images/artworks/b-07.svg",
+    "alt": "BOX BOX BOX"
+  }
+}

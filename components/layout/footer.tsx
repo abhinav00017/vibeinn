@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
 import { Newsletter } from "@/components/layout/newsletter";
+import { Logo } from "@/components/layout/logo";
 
 export function Footer() {
   const year = 2026;
@@ -8,7 +9,7 @@ export function Footer() {
     <footer className="mt-24 border-t border-line">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 md:grid-cols-3">
         <div>
-          <p className="text-lg font-semibold uppercase tracking-[0.3em]">{siteConfig.name}</p>
+          <Logo className="h-5" />
           <p className="mt-2 text-sm text-muted">{siteConfig.tagline}</p>
           <a
             href={siteConfig.socials.instagram}

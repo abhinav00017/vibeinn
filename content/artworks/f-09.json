@@ -1,0 +1,11 @@
+{
+  "id": "f-09",
+  "code": "F09",
+  "name": "TWENTY SEVEN",
+  "side": "front",
+  "new": false,
+  "image": {
+    "src": "/images/artworks/f-09.svg",
+    "alt": "TWENTY SEVEN"
+  }
+}

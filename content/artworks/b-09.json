@@ -1,0 +1,11 @@
+{
+  "id": "b-09",
+  "code": "B09",
+  "name": "LAST LAP",
+  "side": "back",
+  "new": true,
+  "image": {
+    "src": "/images/artworks/b-09.svg",
+    "alt": "LAST LAP"
+  }
+}
