@@ -25,7 +25,7 @@ Append only. Newest at the bottom.
 
 ## 2026-10-19
 
-- Logo: direction B, VIBEINN in Futura Bold with the two Ns joined, as outlined paths. One logo only; the V mark and stacked lockup were dropped on 19 Oct so nothing competes with it. File `public/brand/logo.svg`, rules in `brand/BRAND.md`. Favicon is the V from the wordmark. Abhinav wants the brand minimal: ink on paper, one colour, no decoration.
+- Logo: direction B, VIBEINN in Futura Bold with the two Ns joined, as outlined paths. One logo only; the V mark and stacked lockup were dropped on 19 Oct so nothing competes with it. File `public/brand/logo.svg`, rules in `brand/BRAND.md`. Short form: the joined NN cut from the wordmark (`logo-nn.svg`), used for the favicon and small spaces. Abhinav's idea, 19 Oct. Abhinav wants the brand minimal: ink on paper, one colour, no decoration.
 - Company rules in `docs/COMPANY.md`, product and print rules in `docs/PRODUCT-RULES.md`. Keep policy pages and COMPANY.md promises in sync.
 - Eight motorsport artworks (B07 to B10, F07 to F10) are drafted and live in the catalogue, pending Abhinav's pick. Type inside them is not yet outlined.
 - `tools/textpath.py` turns text into SVG paths with fontTools. Use it to outline artwork text before print.

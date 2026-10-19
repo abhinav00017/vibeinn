@@ -8,13 +8,15 @@ vibeinn makes hand-printed clothing. The brand is quiet so the prints can be lou
 
 There is one logo: the wordmark. VIBEINN in Futura Bold with the two Ns joined. The file is `public/brand/logo.svg`. It is outlined paths and takes the current text colour. Use it as it is. Do not redraw, retype, or stretch it.
 
+The short form is the joined NN cut from the wordmark, file `public/brand/logo-nn.svg`. It is not a second logo. It is the wordmark's own detail, used only where the full wordmark cannot fit.
+
 ### Where it goes
 
 - Website header and footer.
 - Emails, invoices, packing slips.
 - Packaging, labels, and tags.
 - Instagram: the avatar is the wordmark on paper, centred, with clear space on all sides.
-- Favicon: the V from the wordmark, paper on an ink square. File `app/icon.svg`. This is the only place a single letter stands for the brand.
+- Favicon, back neck print, app icons, and spaces under 20 mm: the NN short form.
 
 ### Clear space
 
@@ -22,7 +24,10 @@ Keep a space around the logo equal to the height of the V. Nothing enters that s
 
 ### Minimum size
 
-14 px tall on screen. 20 mm wide in print. If the space is smaller, do not use the logo. Write the name in the body font instead.
+- Wordmark: 14 px tall on screen, 20 mm wide in print.
+- NN short form: 12 px tall on screen, 6 mm wide in print.
+
+If the space is smaller than that, write the name in the body font instead.
 
 ### Colour
 
@@ -41,7 +46,7 @@ On a photo, put it over a dark area in paper, or over a light area in ink. If ne
 - Do not use a colour other than ink or paper.
 - Do not add a tagline inside the clear space.
 - Do not put it on a busy pattern.
-- Do not make a second mark, monogram, or badge. One logo.
+- Do not make a second mark, monogram, or badge. One logo, plus its NN short form.
 
 ### Font licence
 
