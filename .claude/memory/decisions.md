@@ -29,3 +29,4 @@ Append only. Newest at the bottom.
 - Company rules in `docs/COMPANY.md`, product and print rules in `docs/PRODUCT-RULES.md`. Keep policy pages and COMPANY.md promises in sync.
 - Eight motorsport artworks (B07 to B10, F07 to F10) are drafted and live in the catalogue, pending Abhinav's pick. Type inside them is not yet outlined.
 - `tools/textpath.py` turns text into SVG paths with fontTools. Use it to outline artwork text before print.
+- Rule from Abhinav, 19 Oct: attention to detail. Any derived asset (short form, favicon, document image) must be cut from the master logo's exact geometry, never redrawn, and checked against it before it ships.
