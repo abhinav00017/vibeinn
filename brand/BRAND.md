@@ -6,23 +6,15 @@ vibeinn makes hand-printed clothing. The brand is quiet so the prints can be lou
 
 ## 1. Logo
 
-Files live in `public/brand/`. Use them as they are. Do not redraw, retype, or stretch them.
+There is one logo: the wordmark. VIBEINN in Futura Bold with the two Ns joined. The file is `public/brand/logo.svg`. It is outlined paths and takes the current text colour. Use it as it is. Do not redraw, retype, or stretch it.
 
-| File | What it is | Where to use it |
-|------|------------|-----------------|
-| `logo.svg` | Primary wordmark. VIBEINN in Futura Bold, the two Ns joined. Takes the current text colour. | Website header, emails, invoices, the front of packaging. |
-| `logo-ink.svg` | Same wordmark, fixed ink colour. | Anywhere the colour cannot be inherited: documents, exports, print files. |
-| `logo-paper.svg` | Same wordmark, fixed paper colour. | On ink or photo backgrounds. |
-| `logo-stacked.svg` | VIBE over INN with a rule. | Square spaces only: woven labels, stamps, the Instagram avatar. |
-| `mark.svg` | The V mark. | Favicon, back neck print, buttons, small spaces under 60 px. |
-| `mark-ring.svg` | The V mark in a thin ring. | Stickers, wax seals, the back neck when a ring suits the print. |
+### Where it goes
 
-### Which one to use
-
-1. Use the primary wordmark whenever there is room for it.
-2. Use the stacked lockup only when the space is square.
-3. Use the V mark only when the wordmark would be under 14 px tall or 20 mm wide.
-4. Never put the wordmark and the mark next to each other. One or the other.
+- Website header and footer.
+- Emails, invoices, packing slips.
+- Packaging, labels, and tags.
+- Instagram: the avatar is the wordmark on paper, centred, with clear space on all sides.
+- Favicon: the V from the wordmark, paper on an ink square. File `app/icon.svg`. This is the only place a single letter stands for the brand.
 
 ### Clear space
 
@@ -30,8 +22,7 @@ Keep a space around the logo equal to the height of the V. Nothing enters that s
 
 ### Minimum size
 
-- Wordmark: 14 px on screen, 20 mm in print.
-- V mark: 12 px on screen, 6 mm in print.
+14 px tall on screen. 20 mm wide in print. If the space is smaller, do not use the logo. Write the name in the body font instead.
 
 ### Colour
 
@@ -40,7 +31,7 @@ The logo is one colour. It is ink on paper, or paper on ink. Nothing else.
 - Ink: `#111111`
 - Paper: `#f5f2ec`
 
-On a photo, use the paper version over a dark area, or the ink version over a light area. If neither reads, darken the photo under the logo with a gradient. Never add an outline, shadow, or box.
+On a photo, put it over a dark area in paper, or over a light area in ink. If neither reads, darken the photo under the logo with a gradient. Never add an outline, shadow, or box.
 
 ### Do not
 
@@ -50,10 +41,11 @@ On a photo, use the paper version over a dark area, or the ink version over a li
 - Do not use a colour other than ink or paper.
 - Do not add a tagline inside the clear space.
 - Do not put it on a busy pattern.
+- Do not make a second mark, monogram, or badge. One logo.
 
 ### Font licence
 
-The wordmark was drawn from Futura Bold as shipped with macOS. That licence covers personal use, not a registered trademark. Before registering the mark or printing at volume, redraw it from an open geometric font (Jost is the closest) or buy a Futura licence. The files are outlined paths, so nothing on the website depends on the font.
+The wordmark was drawn from Futura Bold as shipped with macOS. That licence covers personal use, not a registered trademark. Before registering the mark or printing at volume, redraw it from an open geometric font (Jost is the closest) or buy a Futura licence. The file is outlined paths, so nothing on the website depends on the font.
 
 ## 2. Colour
 
@@ -93,7 +85,7 @@ Never use italics on the site. Never use more than two sizes in one block.
 ## 4. Layout
 
 - Max content width 1280 px. Side gutter 16 px on phones, 24 px from 640 px up.
-- Corners are square. No rounded corners except the favicon tile and the V ring.
+- Corners are square. No rounded corners.
 - Borders are 1 px Line. No shadows except the cart drawer and modals.
 - Product cards: image 4:5, title under it, price under the title in Muted.
 - Grid: 2 columns on phones, 4 on desktop.
@@ -117,6 +109,6 @@ Never use italics on the site. Never use more than two sizes in one block.
 ## 7. Instagram
 
 - Handle: @vibeinnnow.
-- Avatar: `logo-stacked.svg` on paper.
+- Avatar: the wordmark on paper, centred, with clear space.
 - Posts: product photos as in section 5, or the artwork alone on paper.
 - Captions: one line of what it is, then the price and the link.
